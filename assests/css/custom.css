@@ -1,0 +1,41 @@
+/**
+* Template Name: Mallick26 - V1.0
+* Template URL: 
+* Author: Toufique Ali Mallick
+*/
+
+@charset "utf-8";
+/* CSS Document */
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+html {
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-size: 14px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.6;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
