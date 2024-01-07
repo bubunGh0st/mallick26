@@ -341,4 +341,15 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 20px;
     line-height: 24px;
   }
+@media (max-width: 650px) {
+  #myVideo { 
+    display: none; 
+  }
+  #hero h1 {
+    margin-top: revert;
+  }
+  body {
+    background: url("../images/hero-bg.jpg") no-repeat;
+    background-size: cover;
+  }
 }
