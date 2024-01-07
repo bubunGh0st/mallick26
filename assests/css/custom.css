@@ -262,7 +262,38 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+#hero {
+  position: relative;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+  margin-top: -85px;
+}
 #myVideo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -2;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+#hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.8);
+  z-index: -1;
+}
+/*#myVideo {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
@@ -291,13 +322,18 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   right: 0;
   z-index: -1;
+}*/
+@media (min-width: 992px) {
+  #hero {
+    padding-left: 160px;
+  }
 }
 #hero h1, #hero p, #hero .social-links {
   position: relative;
   z-index: 1; /* Set a higher z-index for the text and social links to appear on top of the overlay */
 }
 #hero h1 {
-  margin-top: 40vh;
+  /*margin-top: 40vh;*/
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
@@ -309,6 +345,9 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 28px;
   font-family: "Poppins", sans-serif;
 
+}
+#hero h1 span {
+  color: #3baea0;
 }
 #hero p span {
   color: #3baea0;
@@ -341,6 +380,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 20px;
     line-height: 24px;
   }
+}
 @media (max-width: 650px) {
   #myVideo { 
     display: none; 
@@ -348,8 +388,57 @@ h1, h2, h3, h4, h5, h6 {
   #hero h1 {
     margin-top: revert;
   }
-  body {
-    background: url("../images/hero-bg.jpg") no-repeat;
+  #hero {
+    background: url("../images/hero-bg.jpg") no-repeat center;
     background-size: cover;
+    z-index: -2;
   }
 }
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section:not(:first-child) {
+  padding: 60px 0;
+  overflow: hidden;
+}
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #fff;
+}
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #3baea0;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+.section-title p {
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
