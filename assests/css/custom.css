@@ -105,25 +105,26 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: rgb(0, 0, 0, 0.5);
+  background: #fff;
   width: 40px;
   height: 40px;
   border-radius: 50px;
   transition: all 0.4s;
+  box-shadow: 0 0 15px 0 rgba(255, 255, 255, 0.5);
 }
 .back-to-top i {
   font-size: 28px;
-  color: #fff;
+  color: #000;
   line-height: 0;
 }
 .back-to-top:hover i {
   font-size: 28px;
-  color: #000;
+  color: #fff;
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #fff;
-  color: #000;
+  background: #3baea0;
+  color: #fff;
 }
 .back-to-top.active {
   visibility: visible;
@@ -344,7 +345,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 15px 0 0 0;
   font-size: 28px;
   font-family: "Poppins", sans-serif;
-
+  font-weight: 500;
 }
 #hero h1 span {
   color: #3baea0;
@@ -442,3 +443,23 @@ section:not(:first-child) {
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+.about .abt-content h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: #728394;
+  padding-bottom: 5px;
+}
+.about .abt-content p {
+  text-align: justify;
+}
+.about .abt-content p i {
+  font-size: 20px;
+  color: #3baea0;
+}
+.about .abt-content p span {
+  font-size: 20px;
+}
+.about .abt-content p strong {
+  color: #3baea0;
+  text-transform: uppercase;
+}
