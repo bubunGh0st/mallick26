@@ -168,3 +168,21 @@
   }
 
 })()
+
+/**
+ * Sticky Header (Add & remove 'sticky' class in section with id='logo-nav')
+ */
+document.addEventListener("DOMContentLoaded", function () {
+    var section = document.getElementById("logo-nav");
+    var sectionOffset = section.offsetTop;
+
+    function handleScroll() {
+        if (window.pageYOffset > sectionOffset) {
+            section.classList.add("sticky");
+        } else {
+            section.classList.remove("sticky");
+        }
+    }
+
+    window.addEventListener("scroll", handleScroll);
+});
