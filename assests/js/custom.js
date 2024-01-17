@@ -186,3 +186,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
     window.addEventListener("scroll", handleScroll);
 });
+
+/**
+ * Read More/Read Less Section
+ */
+function toggleReadMore(element) {
+  var container = element.closest('.read-more-container');
+  var moreText = container.querySelector('.more-text');
+  var dots = container.querySelector('.dots');
+
+  if (moreText.style.maxHeight === "0px" || moreText.style.maxHeight === "") {
+    moreText.style.maxHeight = moreText.scrollHeight + "px";
+    dots.style.display = "none";
+    element.innerHTML = "Read Less";
+  } else {
+    moreText.style.maxHeight = "0";
+    dots.style.display = "inline";
+    element.innerHTML = "Read More";
+  }
+}

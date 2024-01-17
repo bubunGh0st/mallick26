@@ -549,3 +549,46 @@ section:not(:first-child) {
 #skills .all-skills[data-aos^=fade][data-aos^=fade].aos-animate {
   opacity: 0.7;
 }
+
+/*--------------------------------------------------------------
+# Exposure Section
+--------------------------------------------------------------*/
+#exposure .expo-detail {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+}
+#exposure .expo-detail h5 {
+  color: #3baea0;
+  font-weight: 800;
+}
+#exposure .expo-detail p {
+  margin-bottom: 0.3rem;
+}
+#exposure .expo-detail .expo-duration {
+  float: right;
+  display: inline-block;
+  color: #728394;
+}
+#exposure .read-more-container .more-text {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+#exposure .read-more-container ul.more-text {
+  list-style: none;
+  padding-left: 3rem;
+}
+#exposure .read-more-container ul.more-text > li:before {
+  display: inline-block;
+  content: "#";
+  width: 1.5rem;
+  margin-left: -1.5rem;
+  color: #728394;
+}
+#exposure .read-more-container .trigger {
+  cursor: pointer;
+  color: #385170;
+}
+#exposure .expo-first-row {
+  margin-bottom: 20px;
+}
