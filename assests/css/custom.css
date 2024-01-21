@@ -221,10 +221,13 @@ h1, h2, h3, h4, h5, h6 {
 /**
 * Mobile Navigation 
 */
+#logo-nav .container {
+  position: relative;
+}
 .mobile-nav-toggle {
-  position: fixed;
-  right: 135px;
-  top: 22px;
+  position: absolute;
+  right: 0;
+  top: 0;
   z-index: 9998;
   border: 0;
   background: none;
@@ -255,7 +258,9 @@ h1, h2, h3, h4, h5, h6 {
 # Logo Design
 --------------------------------------------------------------*/
 .logo-img img {
-  height: 70px;
+  width: 100%;
+  max-width: 150px;
+  height: auto;
 }
 #logo-nav {
   background-color: transparent;
@@ -557,33 +562,16 @@ section:not(:first-child) {
   background: rgba(0, 0, 0, 0.5);
   padding: 30px;
 }
-#exposure .expo-detail h5 {
-  color: #3baea0;
-  font-weight: 800;
+#exposure .expo-detail .comp-location {
+  float: left;
 }
-#exposure .expo-detail p {
-  margin-bottom: 0.3rem;
-}
-#exposure .expo-detail .expo-duration {
-  float: right;
+#exposure .read-more-container {
   display: inline-block;
-  color: #728394;
 }
 #exposure .read-more-container .more-text {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease-out;
-}
-#exposure .read-more-container ul.more-text {
-  list-style: none;
-  padding-left: 3rem;
-}
-#exposure .read-more-container ul.more-text > li:before {
-  display: inline-block;
-  content: "#";
-  width: 1.5rem;
-  margin-left: -1.5rem;
-  color: #728394;
 }
 #exposure .read-more-container .trigger {
   cursor: pointer;
@@ -591,4 +579,222 @@ section:not(:first-child) {
 }
 #exposure .expo-first-row {
   margin-bottom: 20px;
+}
+
+/*--------------------------------------------------------------
+# Exposure & Education Section
+--------------------------------------------------------------*/
+#exposure .expo-detail h5, #education .edu-details h5 {
+  color: #3baea0;
+  font-weight: 800;
+}
+#exposure .expo-detail p, #education .edu-details p {
+  margin-bottom: 0.3rem;
+}
+#exposure .expo-detail .expo-duration, #education .edu-details .edu-duration {
+  float: right;
+  color: #728394;
+}
+#exposure .expo-detail p, #education .edu-details p {
+  margin-bottom: 0.3rem;
+}
+#exposure .read-more-container ul.more-text, #education .crtf-deatils ul {
+  list-style: none;
+  padding-left: 3rem;
+}
+#exposure .read-more-container ul.more-text > li:before, #education .crtf-deatils ul > li:before {
+  display: inline-block;
+  content: "#";
+  width: 1.5rem;
+  margin-left: -1.5rem;
+  color: #728394;
+}
+
+/*--------------------------------------------------------------
+# Education Section
+--------------------------------------------------------------*/
+#education .edu-section h4 {
+  padding-bottom: 20px;
+}
+#education .edu-details p {
+  display: inline-block;
+}
+#education .edu-nz {
+  padding-bottom: 25px;
+}
+#education .crtf-deatils ul {
+  line-height: 25px;
+}
+
+/*--------------------------------------------------------------
+# Interest Section
+--------------------------------------------------------------*/
+#interest .intrst-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/int-bg.jpg");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px 0;
+}
+#interest .intrst-section {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  padding: 30px 40px;
+  transition: all ease-in-out 0.3s;
+}
+#interest .intrst-section:hover {
+  box-shadow: 0 0 25px 0 rgba(255, 255, 255, 0.4);
+  transform: scale(1.04);
+}
+#interest .intrst-section h5 {
+  color: #3baea0;
+  font-weight: 800;
+  padding: 20px 0;
+}
+#interest .intrst-section h5 i {
+  color: #fff;
+  padding: 5px;
+}
+#interest .end-text a {
+  color: #728394;
+  font-weight: 600;
+  opacity: 1;
+  position: relative;
+}
+#interest .end-text a:hover {
+  opacity: 0.9;
+}
+#interest .end-text a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #728394;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+#interest .end-text a:hover::before {
+  transform: scaleX(1);
+}
+
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+#contact .cnt-info {
+  width: 100%;
+}
+#contact .cnt-info i {
+  font-size: 20px;
+  color: #000;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+#contact .cnt-info h5 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #3baea0;
+}
+#contact .cnt-info p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+#contact .cnt-info .cnt-ph, #contact .cnt-info .cnt-email {
+  margin-top: 40px;
+}
+#contact .cnt-info .cnt-email:hover i, #contact .cnt-info .cnt-address:hover i, #contact .cnt-info .cnt-ph:hover i {
+  background: #000;
+  color: #fff;
+}
+#contact .cnt-map {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 30%;
+}
+#contact .cnt-map iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+#footer {
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 40px 0;
+}
+#footer h3 {
+  font-size: 36px;
+  font-weight: 700;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0 0 15px 0;
+  color: #3baea0;
+}
+#footer p {
+  font-size: 15;
+  font-style: italic;
+  padding: 0;
+  margin: 0 0 40px 0;
+  color: #728394;
+}
+#footer .ft-social-links {
+  margin: 0 0 40px 0;
+}
+#footer .ft-social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.8);
+  color: #000;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+#footer .ft-social-links a:hover {
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+}
+#footer .ft-copyright {
+  margin: 0 0 5px 0;
+}
+#footer .ft-credits {
+  font-size: 13px;
+}
+
+/*--------------------------------------------------------------
+# All Responsive
+--------------------------------------------------------------*/
+@media (max-width:992px) {
+  .logo-img img {
+    max-width: 100px;
+  }
 }
