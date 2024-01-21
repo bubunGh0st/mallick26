@@ -658,16 +658,16 @@ section:not(:first-child) {
   color: #fff;
   padding: 5px;
 }
-#interest .end-text a {
+#interest .end-text a, #footer .ft-credits a {
   color: #728394;
   font-weight: 600;
   opacity: 1;
   position: relative;
 }
-#interest .end-text a:hover {
+#interest .end-text a:hover, #footer .ft-credits a:hover {
   opacity: 0.9;
 }
-#interest .end-text a::before {
+#interest .end-text a::before, #footer .ft-credits a::before {
   content: "";
   position: absolute;
   display: block;
@@ -679,7 +679,7 @@ section:not(:first-child) {
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
-#interest .end-text a:hover::before {
+#interest .end-text a:hover::before, #footer .ft-credits a:hover::before {
   transform: scaleX(1);
 }
 
@@ -718,7 +718,7 @@ section:not(:first-child) {
   margin-top: 40px;
 }
 #contact .cnt-info .cnt-email:hover i, #contact .cnt-info .cnt-address:hover i, #contact .cnt-info .cnt-ph:hover i {
-  background: #000;
+  background: #3baea0;
   color: #fff;
 }
 #contact .cnt-map {
@@ -736,7 +736,7 @@ section:not(:first-child) {
 }
 
 /*--------------------------------------------------------------
-# Contact Section
+# Footer Section
 --------------------------------------------------------------*/
 #footer {
   background: rgba(0, 0, 0, 0.4);
@@ -755,7 +755,7 @@ section:not(:first-child) {
   color: #3baea0;
 }
 #footer p {
-  font-size: 15;
+  font-size: 15px;
   font-style: italic;
   padding: 0;
   margin: 0 0 40px 0;
@@ -779,7 +779,7 @@ section:not(:first-child) {
   transition: 0.3s;
 }
 #footer .ft-social-links a:hover {
-  background: #000;
+  background: #3baea0;
   color: #fff;
   text-decoration: none;
 }
