@@ -823,6 +823,6 @@ section:not(:first-child) {
 
 @media (max-width: 575px) {
   #skills .all-skills {
-    width: 50%;
+    width: 70%;
   }
 }
