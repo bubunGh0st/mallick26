@@ -793,6 +793,12 @@ section:not(:first-child) {
 /*--------------------------------------------------------------
 # All Responsive
 --------------------------------------------------------------*/
+@media (max-width:1300px) {
+  #skills .all-skills {
+    padding: 20px 10px;
+  }
+}
+
 @media (max-width:991px) {
   .logo-img img {
     max-width: 100px;   /*--- Logo Responsive ---*/
@@ -806,6 +812,17 @@ section:not(:first-child) {
     width: 70%;
   }
   .abt-content h3 {
-    text-align: center;
+    text-align: center;   /*---- About Section Responsive ----*/
+  }
+
+  #skills .all-skills {
+    padding: 20px 20px;
+    margin: 5px auto;    /*---- Skill Section ----*/
+  }
+}
+
+@media (max-width: 575px) {
+  #skills .all-skills {
+    width: 50%;
   }
 }
