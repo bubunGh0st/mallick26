@@ -799,6 +799,16 @@ section:not(:first-child) {
   }
 }
 
+@media (max-width: 1199px) {
+  #exposure .expo-detail {
+    min-height: 260px;
+  }
+
+  #contact .cnt-map{
+    padding-bottom: 38%;
+  }
+}
+
 @media (max-width:991px) {
   .logo-img img {
     max-width: 100px;   /*--- Logo Responsive ---*/
@@ -823,22 +833,23 @@ section:not(:first-child) {
   #exposure #foit, #exposure #ethan {
     margin-bottom: 20px;
   }
+
+  #contact .cnt-map{
+    padding-bottom: 70%;
+  }
 }
 
 @media (max-width: 767px) {
-  #education #edu-academi {
+  #education #edu-academi, #contact .cnt-info {
     margin-bottom: 20px;
+  }
+  #contact .cnt-map{
+    padding-bottom: 50%;
   }
 }
 
 @media (max-width: 575px) {
   #skills .all-skills {
     width: 70%;
-  }
-}
-
-@media (max-width: 1199px) {
-  #exposure .expo-detail {
-    min-height: 260px;
   }
 }
