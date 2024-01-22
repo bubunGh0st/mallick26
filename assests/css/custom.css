@@ -793,8 +793,19 @@ section:not(:first-child) {
 /*--------------------------------------------------------------
 # All Responsive
 --------------------------------------------------------------*/
-@media (max-width:992px) {
+@media (max-width:991px) {
   .logo-img img {
-    max-width: 100px;
+    max-width: 100px;   /*--- Logo Responsive ---*/
+  }
+
+  #about .myimage {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  #about .myimage img {
+    width: 70%;
+  }
+  .abt-content h3 {
+    text-align: center;
   }
 }
