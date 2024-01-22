@@ -825,6 +825,12 @@ section:not(:first-child) {
   }
 }
 
+@media (max-width: 767px) {
+  #education #edu-academi {
+    margin-bottom: 20px;
+  }
+}
+
 @media (max-width: 575px) {
   #skills .all-skills {
     width: 70%;
